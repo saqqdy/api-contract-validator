@@ -1,0 +1,12 @@
+{
+  "spec": "./openapi.yaml",
+  "src": "./src",
+  "framework": "express",
+  "output": "console",
+  "exclude": [
+    "node_modules/",
+    "dist/",
+    "coverage/",
+    "test/"
+  ]
+}
