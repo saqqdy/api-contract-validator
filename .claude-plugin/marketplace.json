@@ -1,0 +1,32 @@
+{
+  "name": "api-contract-validator",
+  "description": "API contract drift detection — detect breaking changes between OpenAPI/Swagger specs and implementation code before they reach production",
+  "owner": {
+    "name": "saqqdy",
+    "url": "https://github.com/saqqdy"
+  },
+  "plugins": [
+    {
+      "name": "api-contract-validator",
+      "description": "API contract drift detection — detect breaking changes between OpenAPI/Swagger specs and implementation code before they reach production",
+      "version": "0.1.0",
+      "author": {
+        "name": "saqqdy",
+        "url": "https://github.com/saqqdy"
+      },
+      "source": "./",
+      "category": "development",
+      "tags": [
+        "api",
+        "openapi",
+        "swagger",
+        "contract-testing",
+        "drift-detection",
+        "breaking-changes",
+        "api-compatibility",
+        "claude-code",
+        "claude-code-skill"
+      ]
+    }
+  ]
+}

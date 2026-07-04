@@ -1,0 +1,22 @@
+{
+  "name": "api-contract-validator",
+  "version": "0.1.0",
+  "description": "API Contract Validator — Detect breaking changes between OpenAPI/Swagger specs and implementation code before they reach production",
+  "author": {
+    "name": "saqqdy",
+    "url": "https://github.com/saqqdy"
+  },
+  "repository": "https://github.com/saqqdy/api-contract-validator",
+  "license": "MIT",
+  "keywords": [
+    "api",
+    "openapi",
+    "swagger",
+    "contract-testing",
+    "drift-detection",
+    "breaking-changes",
+    "api-compatibility",
+    "claude-code",
+    "claude-code-skill"
+  ]
+}
