@@ -91,4 +91,4 @@ const drift: DriftResult = {
 
 - [detectDrifts()](/api/detect-drifts)
 - [NormalizedEndpoint Type](/api/types/normalized-endpoint)
-- [Severity Levels](/guide/drift-detection#severity)
+- [Quick Start Guide](/guide/quick-start)

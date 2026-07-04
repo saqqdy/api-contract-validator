@@ -91,4 +91,4 @@ const drift: DriftResult = {
 
 - [detectDrifts()](/zh/api/detect-drifts)
 - [NormalizedEndpoint 类型](/zh/api/types/normalized-endpoint)
-- [严重程度级别](/zh/guide/drift-detection#severity)
+- [快速开始](/zh/guide/quick-start)
