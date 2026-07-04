@@ -1,5 +1,5 @@
 {
-  "name": "api-contract-validator",
+  "name": "openapi-drift-guard",
   "description": "API contract drift detection — detect breaking changes between OpenAPI/Swagger specs and implementation code before they reach production",
   "owner": {
     "name": "saqqdy",
@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "api-contract-validator",
+      "name": "openapi-drift-guard",
       "description": "API contract drift detection — detect breaking changes between OpenAPI/Swagger specs and implementation code before they reach production",
       "version": "0.1.0",
       "author": {

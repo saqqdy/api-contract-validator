@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  base: '/api-contract-validator/',
+  base: '/openapi-drift-guard/',
   head: [
     ['meta', { name: 'theme-color', content: '#6366f1' }],
   ],
@@ -14,7 +14,7 @@ export default defineConfig({
         darkModeSwitchLabel: 'Theme',
         docFooter: { next: 'Next', prev: 'Previous' },
         editLink: {
-          pattern: 'https://github.com/saqqdy/api-contract-validator/edit/master/docs/:path',
+          pattern: 'https://github.com/saqqdy/openapi-drift-guard/edit/master/docs/:path',
           text: 'Edit this page on GitHub',
         },
         footer: { copyright: 'Copyright © 2024-present saqqdy', message: 'MIT License' },
@@ -23,8 +23,8 @@ export default defineConfig({
           { activeMatch: '/guide/', link: '/guide/', text: 'Guide' },
           { activeMatch: '/api/', link: '/api/', text: 'API' },
           { items: [
-            { link: 'https://github.com/saqqdy/api-contract-validator', text: 'GitHub' },
-            { link: 'https://www.npmjs.com/package/api-contract-validator', text: 'NPM' },
+            { link: 'https://github.com/saqqdy/openapi-drift-guard', text: 'GitHub' },
+            { link: 'https://www.npmjs.com/package/openapi-drift-guard', text: 'NPM' },
           ], text: 'Links' },
         ],
         outline: { label: 'On this page' },
@@ -55,7 +55,7 @@ export default defineConfig({
           ],
         },
       },
-      title: 'API Contract Validator',
+      title: 'OpenAPI Drift Guard',
     },
     zh: {
       description: 'AI 驱动的 API 契约漂移检测',
@@ -66,7 +66,7 @@ export default defineConfig({
         darkModeSwitchLabel: '主题',
         docFooter: { next: '下一页', prev: '上一页' },
         editLink: {
-          pattern: 'https://github.com/saqqdy/api-contract-validator/edit/master/docs/:path',
+          pattern: 'https://github.com/saqqdy/openapi-drift-guard/edit/master/docs/:path',
           text: '在 GitHub 上编辑此页',
         },
         footer: { copyright: '版权所有 © 2024-present saqqdy', message: '基于 MIT 许可发布' },
@@ -75,8 +75,8 @@ export default defineConfig({
           { activeMatch: '/zh/guide/', link: '/zh/guide/', text: '指南' },
           { activeMatch: '/zh/api/', link: '/zh/api/', text: 'API' },
           { items: [
-            { link: 'https://github.com/saqqdy/api-contract-validator', text: 'GitHub' },
-            { link: 'https://www.npmjs.com/package/api-contract-validator', text: 'NPM' },
+            { link: 'https://github.com/saqqdy/openapi-drift-guard', text: 'GitHub' },
+            { link: 'https://www.npmjs.com/package/openapi-drift-guard', text: 'NPM' },
           ], text: '链接' },
         ],
         outline: { label: '页面导航' },
@@ -107,14 +107,14 @@ export default defineConfig({
           ],
         },
       },
-      title: 'API Contract Validator',
+      title: 'OpenAPI Drift Guard',
     },
   },
-  sitemap: { hostname: 'https://saqqdy.github.io/api-contract-validator' },
+  sitemap: { hostname: 'https://saqqdy.github.io/openapi-drift-guard' },
   themeConfig: {
     logo: '/logo.svg',
     search: { provider: 'local' },
-    siteTitle: 'API Contract Validator',
-    socialLinks: [{ icon: 'github', link: 'https://github.com/saqqdy/api-contract-validator' }],
+    siteTitle: 'OpenAPI Drift Guard',
+    socialLinks: [{ icon: 'github', link: 'https://github.com/saqqdy/openapi-drift-guard' }],
   },
 })

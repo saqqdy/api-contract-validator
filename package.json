@@ -1,10 +1,10 @@
 {
-  "name": "api-contract-validator",
-  "description": "AI-powered API contract validator — detect drift between OpenAPI spec and implementation. Semantic validation via Claude Code Skill",
+  "name": "openapi-drift-guard",
+  "description": "AI-powered OpenAPI drift guard — detect drift between OpenAPI spec and implementation. Semantic validation via Claude Code Skill",
   "version": "0.1.0",
   "packageManager": "pnpm@9.15.9",
   "bin": {
-    "api-contract-validator": "./dist/cli.js"
+    "openapi-drift-guard": "./dist/cli.js"
   },
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -69,7 +69,7 @@
     "**/analyzer/*.ts"
   ],
   "keywords": [
-    "api-contract-validator",
+    "openapi-drift-guard",
     "openapi",
     "swagger",
     "contract-drift",
@@ -80,12 +80,12 @@
   ],
   "license": "MIT",
   "author": "saqqdy<https://github.com/saqqdy>",
-  "homepage": "https://github.com/saqqdy/api-contract-validator#readme",
+  "homepage": "https://github.com/saqqdy/openapi-drift-guard#readme",
   "bugs": {
-    "url": "https://github.com/saqqdy/api-contract-validator/issues"
+    "url": "https://github.com/saqqdy/openapi-drift-guard/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/saqqdy/api-contract-validator.git"
+    "url": "git+https://github.com/saqqdy/openapi-drift-guard.git"
   }
 }

@@ -1,5 +1,5 @@
 /**
- * Skill commands demo for API Contract Validator
+ * Skill commands demo for OpenAPI Drift Guard
  *
  * Demonstrates the commands available in the Claude Code Skill.
  * Run with: npx tsx examples/skill-commands.ts
@@ -92,7 +92,7 @@ async function checkEndpointCommand(method: string, path: string) {
 // ─── Run demos ────────────────────────────────────────────────────────
 
 async function main() {
-	console.log('🎯 API Contract Validator — Skill Commands Demo\n')
+	console.log('🎯 OpenAPI Drift Guard — Skill Commands Demo\n')
 
 	await validateCommand(
 		'./test/fixtures/specs/openapi3-petstore.yaml',

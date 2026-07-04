@@ -1,12 +1,12 @@
 {
-  "name": "api-contract-validator",
+  "name": "openapi-drift-guard",
   "version": "0.1.0",
-  "description": "API Contract Validator — Detect breaking changes between OpenAPI/Swagger specs and implementation code before they reach production",
+  "description": "OpenAPI Drift Guard — Detect breaking changes between OpenAPI/Swagger specs and implementation code before they reach production",
   "author": {
     "name": "saqqdy",
     "url": "https://github.com/saqqdy"
   },
-  "repository": "https://github.com/saqqdy/api-contract-validator",
+  "repository": "https://github.com/saqqdy/openapi-drift-guard",
   "license": "MIT",
   "keywords": [
     "api",

@@ -5,10 +5,10 @@
 ### 🚀 Features
 
 - **cli**: add zero-install CLI for quick experience
-  - `npx api-contract-validator validate --spec <file> --code <dir>` — contract validation
-  - `npx api-contract-validator init` — generate config file
-  - `npx api-contract-validator --version` — show version
-  - `npx api-contract-validator --help` — show help
+  - `npx openapi-drift-guard validate --spec <file> --code <dir>` — contract validation
+  - `npx openapi-drift-guard init` — generate config file
+  - `npx openapi-drift-guard --version` — show version
+  - `npx openapi-drift-guard --help` — show help
   - Commander.js based CLI with subcommands
   - `--format` option: console (default), json, markdown
   - `--output` option: write report to file
@@ -53,7 +53,7 @@
   - Enhanced skill-commands with examples
   - Comprehensive API reference with usage patterns
   - Updated VitePress config with correct project branding
-- add Claude Code Skill definition (`.claude/skills/api-contract-validator/skill.md`)
+- add Claude Code Skill definition (`.claude/skills/openapi-drift-guard/skill.md`)
   - Commands: `/validate`, `/drift`, `/contract`, `/check-api`, `/api-drift`
   - Severity levels: 🔴 Breaking / 🟡 Warning / 🟢 Info
 - add examples directory with 3 demo scripts

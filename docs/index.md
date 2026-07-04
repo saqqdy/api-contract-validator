@@ -1,9 +1,9 @@
-# 🔍 API Contract Validator
+# 🔍 OpenAPI Drift Guard
 
 > AI-powered API contract drift detection — catch breaking changes between OpenAPI spec and implementation **before** they reach production.
 
-[![npm version](https://img.shields.io/npm/v/api-contract-validator.svg)](https://www.npmjs.com/package/api-contract-validator)
-[![license](https://img.shields.io/npm/l/api-contract-validator.svg)](https://github.com/saqqdy/api-contract-validator/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/openapi-drift-guard.svg)](https://www.npmjs.com/package/openapi-drift-guard)
+[![license](https://img.shields.io/npm/l/openapi-drift-guard.svg)](https://github.com/saqqdy/openapi-drift-guard/blob/master/LICENSE)
 
 ## Quick Links
 
@@ -29,7 +29,7 @@ Traditional testing catches runtime errors, but misses:
 
 ## The Solution
 
-API Contract Validator detects **drift** through three layers:
+OpenAPI Drift Guard detects **drift** through three layers:
 
 | Layer | Capability | Output |
 |-------|------------|--------|
@@ -101,7 +101,7 @@ In Claude Code, use natural language drift detection:
 
 ## Comparison
 
-| Dimension | Schema Validation | API Contract Validator |
+| Dimension | Schema Validation | OpenAPI Drift Guard |
 |-----------|-------------------|------------------------|
 | Timing | Runtime | Design time |
 | Coverage | Single request | Full API surface |
@@ -116,20 +116,20 @@ Choose your path:
 ### 1. Claude Code Plugin (Recommended)
 
 ```bash
-/plugin marketplace add saqqdy/api-contract-validator
-/plugin install api-contract-validator
+/plugin marketplace add saqqdy/openapi-drift-guard
+/plugin install openapi-drift-guard
 ```
 
 ### 2. NPM Package
 
 ```bash
-pnpm add api-contract-validator
+pnpm add openapi-drift-guard
 ```
 
 ### 3. CLI (Zero-Install)
 
 ```bash
-npx api-contract-validator validate --spec ./openapi.yaml --code ./src
+npx openapi-drift-guard validate --spec ./openapi.yaml --code ./src
 ```
 
 ## Project Status

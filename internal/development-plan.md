@@ -1,4 +1,4 @@
-# API Contract Validator — 详细开发计划
+# OpenAPI Drift Guard — 详细开发计划
 
 ## 项目概述
 
@@ -62,7 +62,7 @@
 ## 三、项目结构
 
 ```
-api-contract-validator/
+openapi-drift-guard/
 ├── src/
 │   ├── index.ts                  # 入口 + Skill 注册
 │   ├── cli.ts                    # CLI 命令定义
@@ -110,7 +110,7 @@ api-contract-validator/
 │   ├── detector/
 │   └── reporter/
 ├── skill/
-│   └── api-contract-validator.md # Claude Code Skill 定义
+│   └── openapi-drift-guard.md # Claude Code Skill 定义
 ├── package.json
 ├── tsconfig.json
 ├── tsdown.config.ts
@@ -206,16 +206,16 @@ api-contract-validator/
 **CLI 使用示例**：
 ```bash
 # 基础用法
-api-contract-validator validate --spec ./openapi.yaml --src ./src
+openapi-drift-guard validate --spec ./openapi.yaml --src ./src
 
 # 指定框架
-api-contract-validator validate --spec ./openapi.yaml --src ./src --framework express
+openapi-drift-guard validate --spec ./openapi.yaml --src ./src --framework express
 
 # 输出格式
-api-contract-validator validate --spec ./openapi.yaml --src ./src --output json > report.json
+openapi-drift-guard validate --spec ./openapi.yaml --src ./src --output json > report.json
 
 # 仅检查特定 drift 类型
-api-contract-validator validate --spec ./openapi.yaml --src ./src --only missing-endpoint,type-mismatch
+openapi-drift-guard validate --spec ./openapi.yaml --src ./src --only missing-endpoint,type-mismatch
 ```
 
 **验证标准**：
@@ -270,11 +270,11 @@ api-contract-validator validate --spec ./openapi.yaml --src ./src --only missing
 **目标**：作为 Claude Code Skill 无缝集成到开发工作流
 
 **任务清单**：
-1. 编写 Skill 定义文件（`skill/api-contract-validator.md`）
+1. 编写 Skill 定义文件（`skill/openapi-drift-guard.md`）
 2. 触发场景定义
    - PR 审查时自动检查 API 契约
    - 新增/修改端点时提示更新 spec
-   - 手动 `/api-contract-validator` 触发
+   - 手动 `/openapi-drift-guard` 触发
 3. 与 Claude Code 对话集成
    - 支持自然语言查询："哪些 API 没有文档化？"
    - 支持增量检查："只检查这次 PR 改动的端点"
@@ -450,7 +450,7 @@ triggers:
       - "**/swagger.{yaml,yml,json}"
       - "**/routes/**"
       - "**/controllers/**"
-  - command: "/api-contract-validator"
+  - command: "/openapi-drift-guard"
   - description: "PR 审查时自动检查"
 ```
 

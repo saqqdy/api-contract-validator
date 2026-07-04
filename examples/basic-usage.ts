@@ -1,5 +1,5 @@
 /**
- * Basic usage examples for API Contract Validator
+ * Basic usage examples for OpenAPI Drift Guard
  *
  * Run with: npx tsx examples/basic-usage.ts
  */
@@ -7,7 +7,7 @@
 import { Validator } from '../src/index'
 
 async function main() {
-	console.log('🔍 API Contract Validator — Basic Usage Examples\n')
+	console.log('🔍 OpenAPI Drift Guard — Basic Usage Examples\n')
 
 	// ─── Example 1: Validate Express app against OpenAPI spec ────────
 	console.log('📝 Example 1: Validate Express App')

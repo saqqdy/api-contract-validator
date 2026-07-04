@@ -33,7 +33,7 @@ Output:
 ## Using the API
 
 ```typescript
-import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'api-contract-validator'
+import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'openapi-drift-guard'
 
 // Parse OpenAPI spec
 const specEndpoints = parseAndNormalizeSpec('./openapi.yaml')
@@ -53,8 +53,8 @@ console.log(`Drifts found: ${drifts.length}`)
 
 ```bash
 # Validate contract
-npx api-contract-validator validate --spec ./openapi.yaml --code ./src
+npx openapi-drift-guard validate --spec ./openapi.yaml --code ./src
 
 # With options
-npx api-contract-validator validate   --spec ./openapi.yaml   --code ./src   --framework express   --output json
+npx openapi-drift-guard validate   --spec ./openapi.yaml   --code ./src   --framework express   --output json
 ```

@@ -1,6 +1,6 @@
 # Version Roadmap
 
-API Contract Validator evolves through themed releases.
+OpenAPI Drift Guard evolves through themed releases.
 
 ## Current Release
 
@@ -68,4 +68,4 @@ API Contract Validator evolves through themed releases.
 
 ## Changelog
 
-See [CHANGELOG.md](https://github.com/saqqdy/api-contract-validator/blob/master/CHANGELOG.md) for release history.
+See [CHANGELOG.md](https://github.com/saqqdy/openapi-drift-guard/blob/master/CHANGELOG.md) for release history.

@@ -33,7 +33,7 @@
 ## 使用 API
 
 ```typescript
-import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'api-contract-validator'
+import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'openapi-drift-guard'
 
 // 解析 OpenAPI 规范
 const specEndpoints = parseAndNormalizeSpec('./openapi.yaml')
@@ -53,8 +53,8 @@ console.log(`发现漂移: ${drifts.length}`)
 
 ```bash
 # 验证契约
-npx api-contract-validator validate --spec ./openapi.yaml --code ./src
+npx openapi-drift-guard validate --spec ./openapi.yaml --code ./src
 
 # 带选项
-npx api-contract-validator validate   --spec ./openapi.yaml   --code ./src   --framework express   --output json
+npx openapi-drift-guard validate   --spec ./openapi.yaml   --code ./src   --framework express   --output json
 ```

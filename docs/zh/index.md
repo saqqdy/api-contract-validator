@@ -1,9 +1,9 @@
-# 🔍 API Contract Validator
+# 🔍 OpenAPI Drift Guard
 
 > AI 驱动的 API 契约漂移检测 — 在 OpenAPI 规范与实现代码的**破坏性变更**到达生产前发现它们。
 
-[![npm version](https://img.shields.io/npm/v/api-contract-validator.svg)](https://www.npmjs.com/package/api-contract-validator)
-[![license](https://img.shields.io/npm/l/api-contract-validator.svg)](https://github.com/saqqdy/api-contract-validator/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/openapi-drift-guard.svg)](https://www.npmjs.com/package/openapi-drift-guard)
+[![license](https://img.shields.io/npm/l/openapi-drift-guard.svg)](https://github.com/saqqdy/openapi-drift-guard/blob/master/LICENSE)
 
 ## 快速链接
 
@@ -29,7 +29,7 @@ API 规范与实现代码会悄悄漂移：
 
 ## 解决方案
 
-API Contract Validator 通过三层检测**漂移**：
+OpenAPI Drift Guard 通过三层检测**漂移**：
 
 | 层级 | 能力 | 输出 |
 |------|------|------|
@@ -101,7 +101,7 @@ API Contract Validator 通过三层检测**漂移**：
 
 ## 对比
 
-| 维度 | Schema 验证 | API Contract Validator |
+| 维度 | Schema 验证 | OpenAPI Drift Guard |
 |------|-------------|------------------------|
 | 时机 | 运行时 | 设计时 |
 | 覆盖范围 | 单个请求 | 完整 API 接口 |
@@ -116,20 +116,20 @@ API Contract Validator 通过三层检测**漂移**：
 ### 1. Claude Code 插件（推荐）
 
 ```bash
-/plugin marketplace add saqqdy/api-contract-validator
-/plugin install api-contract-validator
+/plugin marketplace add saqqdy/openapi-drift-guard
+/plugin install openapi-drift-guard
 ```
 
 ### 2. NPM 包
 
 ```bash
-pnpm add api-contract-validator
+pnpm add openapi-drift-guard
 ```
 
 ### 3. CLI（零安装）
 
 ```bash
-npx api-contract-validator validate --spec ./openapi.yaml --code ./src
+npx openapi-drift-guard validate --spec ./openapi.yaml --code ./src
 ```
 
 ## 项目状态

@@ -29,7 +29,7 @@ function parseAndNormalizeSpec(specPath: string): NormalizedEndpoint[]
 ### Basic Usage
 
 ```typescript
-import { parseAndNormalizeSpec } from 'api-contract-validator'
+import { parseAndNormalizeSpec } from 'openapi-drift-guard'
 
 const endpoints = parseAndNormalizeSpec('./openapi.yaml')
 

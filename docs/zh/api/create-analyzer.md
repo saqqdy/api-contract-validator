@@ -36,7 +36,7 @@ type Framework =
 ### Express 分析器 (v0.1.0)
 
 ```typescript
-import { createAnalyzer } from 'api-contract-validator'
+import { createAnalyzer } from 'openapi-drift-guard'
 
 const analyzer = createAnalyzer('express', './src')
 const endpoints = analyzer.analyze()

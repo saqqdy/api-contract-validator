@@ -1,5 +1,5 @@
 /**
- * Configuration usage example for API Contract Validator
+ * Configuration usage example for OpenAPI Drift Guard
  *
  * Demonstrates how to use custom configuration.
  * Run with: npx tsx examples/with-config.ts
@@ -9,7 +9,7 @@ import { Validator } from '../src/index'
 import { mergeConfig, getDefaultConfig, validateConfig } from '../src/utils/config'
 
 async function main() {
-	console.log('⚙️  API Contract Validator — Configuration Example\n')
+	console.log('⚙️  OpenAPI Drift Guard — Configuration Example\n')
 
 	// ─── Default configuration ──────────────────────────────────────
 	console.log('🔹 Default configuration:')

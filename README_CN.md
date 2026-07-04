@@ -1,9 +1,9 @@
-# 🔍 API Contract Validator
+# 🔍 OpenAPI Drift Guard
 
 > AI 驱动的 API 契约漂移检测 — 在 OpenAPI 规范与实现代码的**破坏性变更**到达生产环境前发现它们。语义级契约验证，通过 Claude Code Skill 实现。
 
-[![npm version](https://img.shields.io/npm/v/api-contract-validator.svg)](https://www.npmjs.com/package/api-contract-validator)
-[![license](https://img.shields.io/npm/l/api-contract-validator.svg)](https://github.com/saqqdy/api-contract-validator/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/openapi-drift-guard.svg)](https://www.npmjs.com/package/openapi-drift-guard)
+[![license](https://img.shields.io/npm/l/openapi-drift-guard.svg)](https://github.com/saqqdy/openapi-drift-guard/blob/master/LICENSE)
 
 [English Docs](README.md)
 
@@ -11,7 +11,7 @@
 
 ## 🎯 解决的问题
 
-| 场景 | 传统测试 | API Contract Validator |
+| 场景 | 传统测试 | OpenAPI Drift Guard |
 |------|---------|------------------------|
 | 规范与代码不一致 | 只捕获运行时错误 | 对比规范 vs 实现，识别漂移 |
 | 缺失端点 | ❌ 发现不了 | ✅ 检测规范定义但代码未实现的端点 |
@@ -52,11 +52,11 @@
 ## 🚀 快速开始
 
 ```bash
-pnpm add api-contract-validator
+pnpm add openapi-drift-guard
 ```
 
 ```typescript
-import { Validator } from 'api-contract-validator'
+import { Validator } from 'openapi-drift-guard'
 
 const validator = new Validator({
   specPath: './openapi.yaml',

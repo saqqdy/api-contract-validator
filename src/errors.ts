@@ -1,5 +1,5 @@
 /**
- * Structured error classes for API Contract Validator
+ * Structured error classes for OpenAPI Drift Guard
  */
 
 /** Error thrown when spec parsing fails */

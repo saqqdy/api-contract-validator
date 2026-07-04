@@ -1,6 +1,6 @@
 # API Reference
 
-Programmatic API for API Contract Validator.
+Programmatic API for OpenAPI Drift Guard.
 
 ## Parser
 
@@ -9,7 +9,7 @@ Programmatic API for API Contract Validator.
 Parse OpenAPI/Swagger spec file into normalized endpoints.
 
 ```typescript
-import { parseAndNormalizeSpec } from 'api-contract-validator'
+import { parseAndNormalizeSpec } from 'openapi-drift-guard'
 
 const endpoints = parseAndNormalizeSpec('./openapi.yaml')
 console.log(`Found ${endpoints.length} endpoints`)
@@ -24,7 +24,7 @@ console.log(`Found ${endpoints.length} endpoints`)
 Create framework-specific code analyzer.
 
 ```typescript
-import { createAnalyzer } from 'api-contract-validator'
+import { createAnalyzer } from 'openapi-drift-guard'
 
 const analyzer = createAnalyzer('express', './src')
 const endpoints = analyzer.analyze()
@@ -39,7 +39,7 @@ const endpoints = analyzer.analyze()
 Detect drifts between spec and code endpoints.
 
 ```typescript
-import { detectDrifts } from 'api-contract-validator'
+import { detectDrifts } from 'openapi-drift-guard'
 
 const drifts = detectDrifts(specEndpoints, codeEndpoints)
 for (const drift of drifts) {
@@ -107,13 +107,13 @@ import {
   formatEndpointShort,
   formatSeverityBadge,
   truncate,
-} from 'api-contract-validator'
+} from 'openapi-drift-guard'
 ```
 
 ### Config Utilities
 
 ```typescript
-import { getDefaultConfig, mergeConfig, validateConfig } from 'api-contract-validator'
+import { getDefaultConfig, mergeConfig, validateConfig } from 'openapi-drift-guard'
 
 const config = mergeConfig({ framework: 'express', codeDir: './src' })
 validateConfig(config)

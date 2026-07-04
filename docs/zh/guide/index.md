@@ -1,6 +1,6 @@
 # 介绍
 
-API Contract Validator 帮助你在 OpenAPI/Swagger 规范与实现代码之间的**破坏性变更**到达生产前发现它们。
+OpenAPI Drift Guard 帮助你在 OpenAPI/Swagger 规范与实现代码之间的**破坏性变更**到达生产前发现它们。
 
 ## 问题
 

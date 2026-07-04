@@ -1,6 +1,6 @@
 # 技能命令
 
-API Contract Validator 在 Claude Code 中提供交互式漂移检测命令。
+OpenAPI Drift Guard 在 Claude Code 中提供交互式漂移检测命令。
 
 ## 可用命令
 
@@ -106,7 +106,7 @@ API Contract Validator 在 Claude Code 中提供交互式漂移检测命令。
 所有技能命令使用底层 API：
 
 ```typescript
-import { detectDrifts, formatDriftReport } from 'api-contract-validator'
+import { detectDrifts, formatDriftReport } from 'openapi-drift-guard'
 
 const drifts = detectDrifts(specEndpoints, codeEndpoints)
 const report = formatDriftReport({ drifts, summary })

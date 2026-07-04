@@ -1,6 +1,6 @@
 # Introduction
 
-API Contract Validator helps you catch breaking changes between OpenAPI/Swagger specs and implementation code **before** they reach production.
+OpenAPI Drift Guard helps you catch breaking changes between OpenAPI/Swagger specs and implementation code **before** they reach production.
 
 ## The Problem
 

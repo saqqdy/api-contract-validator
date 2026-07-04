@@ -22,7 +22,7 @@ const pkg = JSON.parse(readFileSync(pkgPath, 'utf-8'))
 const program = new Command()
 
 program
-	.name('api-contract-validator')
+	.name('openapi-drift-guard')
 	.description('Detect drift between OpenAPI spec and implementation')
 	.version(pkg.version)
 
@@ -67,7 +67,7 @@ program
 			// Validate required options
 			if (!config.specFile || !config.codeDirectory) {
 				console.error('❌ Error: Both --spec and --code are required')
-				console.log('Usage: api-contract-validator validate --spec <file> --code <dir>')
+				console.log('Usage: openapi-drift-guard validate --spec <file> --code <dir>')
 				process.exit(2)
 			}
 

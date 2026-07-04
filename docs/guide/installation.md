@@ -4,14 +4,14 @@ Choose the installation method that fits your workflow.
 
 ## Option 1: Claude Code Plugin (Recommended)
 
-API Contract Validator is designed as a **Claude Code Plugin** for seamless integration.
+OpenAPI Drift Guard is designed as a **Claude Code Plugin** for seamless integration.
 
 ### Method A: Plugin Marketplace
 
 ```bash
 # In Claude Code, run:
-/plugin marketplace add saqqdy/api-contract-validator
-/plugin install api-contract-validator
+/plugin marketplace add saqqdy/openapi-drift-guard
+/plugin install openapi-drift-guard
 ```
 
 ### Method B: Local Install
@@ -21,11 +21,11 @@ API Contract Validator is designed as a **Claude Code Plugin** for seamless inte
 cd your-project
 
 # 2. Install npm package
-pnpm add -D api-contract-validator
+pnpm add -D openapi-drift-guard
 
 # 3. Copy skill files
 mkdir -p .claude/skills
-cp -r node_modules/api-contract-validator/.claude/skills/api-contract-validator .claude/skills/
+cp -r node_modules/openapi-drift-guard/.claude/skills/openapi-drift-guard .claude/skills/
 ```
 
 After installation, use commands like `/validate`, `/drift`, `/contract` in Claude Code.
@@ -35,7 +35,7 @@ After installation, use commands like `/validate`, `/drift`, `/contract` in Clau
 For programmatic usage in Node.js/TypeScript projects:
 
 ```bash
-pnpm add api-contract-validator
+pnpm add openapi-drift-guard
 ```
 
 ```typescript
@@ -43,7 +43,7 @@ import {
   parseAndNormalizeSpec,
   createAnalyzer,
   detectDrifts,
-} from 'api-contract-validator'
+} from 'openapi-drift-guard'
 
 // Parse spec
 const specEndpoints = parseAndNormalizeSpec('./openapi.yaml')
@@ -62,9 +62,9 @@ Run directly with `npx` — no installation required:
 
 ```bash
 # In any project
-npx api-contract-validator validate --spec ./openapi.yaml --code ./src
-npx api-contract-validator --version
-npx api-contract-validator --help
+npx openapi-drift-guard validate --spec ./openapi.yaml --code ./src
+npx openapi-drift-guard --version
+npx openapi-drift-guard --help
 ```
 
 ## Option 4: Clone and Explore
@@ -72,8 +72,8 @@ npx api-contract-validator --help
 For development or exploring examples:
 
 ```bash
-git clone https://github.com/saqqdy/api-contract-validator.git
-cd api-contract-validator
+git clone https://github.com/saqqdy/openapi-drift-guard.git
+cd openapi-drift-guard
 pnpm install
 
 # Run examples
@@ -88,14 +88,14 @@ Verify your installation:
 
 ```bash
 # CLI
-npx api-contract-validator --version
+npx openapi-drift-guard --version
 
 # Node.js
-node -e "console.log(require('api-contract-validator').version)"
+node -e "console.log(require('openapi-drift-guard').version)"
 ```
 
 ## Next Steps
 
-- [Quick Start](/guide/quick-start) — See API Contract Validator in action
+- [Quick Start](/guide/quick-start) — See OpenAPI Drift Guard in action
 - [API Reference](/api/) — Explore the full API
 - [Skill Commands](/guide/skill-commands) — Interactive drift detection commands

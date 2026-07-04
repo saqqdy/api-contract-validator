@@ -1,5 +1,5 @@
 /**
- * Configuration management for API Contract Validator
+ * Configuration management for OpenAPI Drift Guard
  */
 
 import type { CliOptions, Config, ConfigFile, Framework, OutputFormat } from '../types/config'

@@ -1,13 +1,13 @@
-# API Contract Validator — Claude Code Guide
+# OpenAPI Drift Guard — Claude Code Guide
 
 ## Project Overview
 
-API Contract Validator 是一个 Claude Code Skill 插件，用于检测 OpenAPI/Swagger 规范与实现代码之间的 drift（偏差），在破坏性变更到达生产环境前发现它们。
+OpenAPI Drift Guard 是一个 Claude Code Skill 插件，用于检测 OpenAPI/Swagger 规范与实现代码之间的 drift（偏差），在破坏性变更到达生产环境前发现它们。
 
 ## Architecture
 
 ```
-.claude/skills/api-contract-validator/  ← Skill 定义（核心产品）
+.claude/skills/openapi-drift-guard/  ← Skill 定义（核心产品）
 src/                                     ← TypeScript 源码（程序化 API）
 internal/                                ← 内部规划文档
 docs/                                    ← VitePress 文档站点

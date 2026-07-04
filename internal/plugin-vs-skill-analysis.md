@@ -522,7 +522,7 @@ my-plugin/
 
 #### Plugin 项目
 ```
-api-contract-validator/           # 项目根目录
+openapi-drift-guard/           # 项目根目录
 ├── .claude-plugin/               # 插件清单目录
 │   ├── plugin.json               # 插件清单（必须）
 │   └── marketplace.json          # 市场发布配置（可选）
@@ -559,11 +559,11 @@ my-project/                       # 项目根目录
 #### plugin.json（Plugin）
 ```json
 {
-  "name": "api-contract-validator",
+  "name": "openapi-drift-guard",
   "version": "0.1.0",
   "description": "API Contract drift detection",
   "author": { "name": "saqqdy" },
-  "repository": "https://github.com/saqqdy/api-contract-validator",
+  "repository": "https://github.com/saqqdy/openapi-drift-guard",
   "license": "MIT",
   "defaultEnabled": false,
   "skills": ["./skills/"],
@@ -578,7 +578,7 @@ my-project/                       # 项目根目录
 #### SKILL.md Frontmatter（Skill）
 ```markdown
 ---
-name: api-contract-validator
+name: openapi-drift-guard
 description: 检测 OpenAPI 规范与实现的 drift
 triggers:
   - /validate
@@ -612,13 +612,13 @@ triggers:
 #### Plugin 分发
 ```bash
 # Marketplace
-claude plugin install @saqqdy/api-contract-validator
+claude plugin install @saqqdy/openapi-drift-guard
 
 # npm
-claude plugin install api-contract-validator
+claude plugin install openapi-drift-guard
 
 # GitHub
-claude plugin install github:saqqdy/api-contract-validator
+claude plugin install github:saqqdy/openapi-drift-guard
 
 # 本地
 claude plugin install ./path/to/plugin
@@ -627,7 +627,7 @@ claude plugin install ./path/to/plugin
 #### Skill 分发
 ```bash
 # Git clone（项目级）
-git clone https://github.com/saqqdy/api-contract-validator
+git clone https://github.com/saqqdy/openapi-drift-guard
 # 技能随项目 .claude/skills/ 目录可用
 
 # 手动复制（个人级）
@@ -703,7 +703,7 @@ cp -r skills/my-skill ~/.claude/skills/
 
 ### 本项目示例
 
-本项目 `api-contract-validator` 采用了混合策略：
+本项目 `openapi-drift-guard` 采用了混合策略：
 - `.claude-plugin/` - Plugin 清单（用于市场发布）
 - `.claude/skills/` - Skill 定义（核心产品）
 

@@ -32,7 +32,7 @@
 
 ## ⭐ 第二梯队：高价值方向
 
-### 4. **API Contract Validator** — API 契约校验器
+### 4. **OpenAPI Drift Guard** — API 契约校验器
 > 对比 OpenAPI Spec 与实际代码实现，发现 drift（遗漏字段、类型不一致、未文档化的端点）
 
 - 微服务团队的刚需，手动对比几乎不可能

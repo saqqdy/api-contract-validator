@@ -1,6 +1,6 @@
 # Skill Commands
 
-API Contract Validator provides interactive drift detection commands in Claude Code.
+OpenAPI Drift Guard provides interactive drift detection commands in Claude Code.
 
 ## Available Commands
 
@@ -106,7 +106,7 @@ Chain commands for workflow:
 All skill commands use the underlying API:
 
 ```typescript
-import { detectDrifts, formatDriftReport } from 'api-contract-validator'
+import { detectDrifts, formatDriftReport } from 'openapi-drift-guard'
 
 const drifts = detectDrifts(specEndpoints, codeEndpoints)
 const report = formatDriftReport({ drifts, summary })

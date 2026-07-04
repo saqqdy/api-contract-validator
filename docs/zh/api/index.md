@@ -1,6 +1,6 @@
 # API 参考
 
-API Contract Validator 的编程接口。
+OpenAPI Drift Guard 的编程接口。
 
 ## 解析器
 
@@ -9,7 +9,7 @@ API Contract Validator 的编程接口。
 将 OpenAPI/Swagger 规范文件解析为标准化端点。
 
 ```typescript
-import { parseAndNormalizeSpec } from 'api-contract-validator'
+import { parseAndNormalizeSpec } from 'openapi-drift-guard'
 
 const endpoints = parseAndNormalizeSpec('./openapi.yaml')
 console.log(`发现 ${endpoints.length} 个端点`)
@@ -24,7 +24,7 @@ console.log(`发现 ${endpoints.length} 个端点`)
 创建框架特定的代码分析器。
 
 ```typescript
-import { createAnalyzer } from 'api-contract-validator'
+import { createAnalyzer } from 'openapi-drift-guard'
 
 const analyzer = createAnalyzer('express', './src')
 const endpoints = analyzer.analyze()
@@ -39,7 +39,7 @@ const endpoints = analyzer.analyze()
 检测规范端点与代码端点之间的漂移。
 
 ```typescript
-import { detectDrifts } from 'api-contract-validator'
+import { detectDrifts } from 'openapi-drift-guard'
 
 const drifts = detectDrifts(specEndpoints, codeEndpoints)
 for (const drift of drifts) {
@@ -107,13 +107,13 @@ import {
   formatEndpointShort,
   formatSeverityBadge,
   truncate,
-} from 'api-contract-validator'
+} from 'openapi-drift-guard'
 ```
 
 ### 配置工具
 
 ```typescript
-import { getDefaultConfig, mergeConfig, validateConfig } from 'api-contract-validator'
+import { getDefaultConfig, mergeConfig, validateConfig } from 'openapi-drift-guard'
 
 const config = mergeConfig({ framework: 'express', codeDir: './src' })
 validateConfig(config)

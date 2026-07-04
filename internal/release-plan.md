@@ -1,4 +1,4 @@
-# API Contract Validator — 版本发布计划
+# OpenAPI Drift Guard — 版本发布计划
 
 ## 版本策略
 
@@ -27,8 +27,8 @@ PRERELEASE — alpha / beta / rc
 
 | 渠道 | 包名 / 地址 | 触发方式 |
 |------|------------|----------|
-| npm | `api-contract-validator` | `npm publish` |
-| GitHub Release | `saqqdy/api-contract-validator` | Git tag push |
+| npm | `openapi-drift-guard` | `npm publish` |
+| GitHub Release | `saqqdy/openapi-drift-guard` | Git tag push |
 | Claude Code Skill Registry | 待集成 | 发版自动同步 |
 
 ---
@@ -127,7 +127,7 @@ PRERELEASE — alpha / beta / rc
 - ✅ Claude Code Skill 定义完整
 
 **质量门禁**：
-- ✅ `npm i -g api-contract-validator` 可正常安装（待发布验证）
+- ✅ `npm i -g openapi-drift-guard` 可正常安装（待发布验证）
 - ✅ `validate` 命令端到端跑通
 - ✅ Console 输出信息完整美观
 - ✅ Markdown 输出可贴 PR comment
@@ -306,7 +306,7 @@ npm pack --dry-run
 **包含范围**：
 - v0.4.0-beta.1 全部功能
 - SARIF Reporter
-- GitHub Actions Action（`saqqdy/api-contract-validator-action`）
+- GitHub Actions Action（`saqqdy/openapi-drift-guard-action`）
 - GitLab CI 模板
 - CI 缓存策略文档
 - 退出码标准化

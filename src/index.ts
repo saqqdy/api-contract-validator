@@ -1,5 +1,5 @@
 /**
- * API Contract Validator
+ * OpenAPI Drift Guard
  * Main entry point
  */
 

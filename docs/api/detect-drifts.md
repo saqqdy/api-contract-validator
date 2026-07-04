@@ -42,7 +42,7 @@ function detectDrifts(
 ### Basic Usage
 
 ```typescript
-import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'api-contract-validator'
+import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'openapi-drift-guard'
 
 const specEndpoints = parseAndNormalizeSpec('./openapi.yaml')
 const analyzer = createAnalyzer('express', './src')

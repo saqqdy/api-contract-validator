@@ -1,6 +1,6 @@
-# Contributing to API Contract Validator
+# Contributing to OpenAPI Drift Guard
 
-First off, thank you for considering contributing to API Contract Validator! It's people like you that make this tool better for everyone.
+First off, thank you for considering contributing to OpenAPI Drift Guard! It's people like you that make this tool better for everyone.
 
 ## 🎯 Ways to Contribute
 
@@ -46,8 +46,8 @@ Feature requests are welcome! Please:
 
 ```bash
 # Clone the repository
-git clone https://github.com/saqqdy/api-contract-validator.git
-cd api-contract-validator
+git clone https://github.com/saqqdy/openapi-drift-guard.git
+cd openapi-drift-guard
 
 # Install dependencies
 pnpm install
@@ -68,7 +68,7 @@ pnpm typecheck
 ### Project Structure
 
 ```
-api-contract-validator/
+openapi-drift-guard/
 ├── src/              # Source code
 │   ├── parser/       # OpenAPI/Swagger parser
 │   ├── analyzer/     # Code analyzers

@@ -1,9 +1,9 @@
-# 🔍 API Contract Validator
+# 🔍 OpenAPI Drift Guard
 
 > AI-powered API contract drift detection — detect breaking changes between OpenAPI/Swagger specs and implementation code **before** they reach production.
 
-[![npm version](https://img.shields.io/npm/v/api-contract-validator.svg)](https://www.npmjs.com/package/api-contract-validator)
-[![license](https://img.shields.io/npm/l/api-contract-validator.svg)](https://github.com/saqqdy/api-contract-validator/blob/master/LICENSE)
+[![npm version](https://img.shields.io/npm/v/openapi-drift-guard.svg)](https://www.npmjs.com/package/openapi-drift-guard)
+[![license](https://img.shields.io/npm/l/openapi-drift-guard.svg)](https://github.com/saqqdy/openapi-drift-guard/blob/master/LICENSE)
 
 [中文文档](README_CN.md)
 
@@ -11,7 +11,7 @@
 
 ## 🎯 The Problem It Solves
 
-| Scenario | Traditional Testing | API Contract Validator |
+| Scenario | Traditional Testing | OpenAPI Drift Guard |
 |----------|--------------------|------------------------|
 | "Is this endpoint documented?" | ❌ Manual review | ✅ Auto-detect missing/phantom endpoints |
 | "Will this change break clients?" | ⚠️ Runtime tests only | ✅ Static analysis before deploy |
@@ -57,14 +57,14 @@
 
 ```bash
 # Option 1: Zero-install CLI (fastest)
-npx api-contract-validator validate --spec openapi.yaml --code src/
+npx openapi-drift-guard validate --spec openapi.yaml --code src/
 
 # Option 2: Install globally
-npm install -g api-contract-validator
-api-contract-validator validate --spec openapi.yaml --code src/
+npm install -g openapi-drift-guard
+openapi-drift-guard validate --spec openapi.yaml --code src/
 
 # Option 3: Use in Node.js project
-npm install api-contract-validator
+npm install openapi-drift-guard
 ```
 
 **First run results**:
@@ -82,8 +82,8 @@ See [Getting Started](#getting-started) for detailed usage.
 
 ```bash
 # In Claude Code, run:
-/plugin marketplace add saqqdy/api-contract-validator
-/plugin install api-contract-validator
+/plugin marketplace add saqqdy/openapi-drift-guard
+/plugin install openapi-drift-guard
 ```
 
 #### Available Commands
@@ -99,11 +99,11 @@ See [Getting Started](#getting-started) for detailed usage.
 ### Option 2: NPM Package
 
 ```bash
-pnpm add api-contract-validator
+pnpm add openapi-drift-guard
 ```
 
 ```typescript
-import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'api-contract-validator'
+import { parseAndNormalizeSpec, createAnalyzer, detectDrifts } from 'openapi-drift-guard'
 
 // Parse spec
 const specEndpoints = parseAndNormalizeSpec('./openapi.yaml')
@@ -121,16 +121,16 @@ console.log(`Found ${drifts.length} drifts`)
 
 ```bash
 # In any project
-npx api-contract-validator validate --spec ./openapi.yaml --code ./src
-npx api-contract-validator --version
-npx api-contract-validator --help
+npx openapi-drift-guard validate --spec ./openapi.yaml --code ./src
+npx openapi-drift-guard --version
+npx openapi-drift-guard --help
 ```
 
 ### Option 4: Clone and Run Examples
 
 ```bash
-git clone https://github.com/saqqdy/api-contract-validator.git
-cd api-contract-validator
+git clone https://github.com/saqqdy/openapi-drift-guard.git
+cd openapi-drift-guard
 pnpm install
 
 # Run examples
@@ -156,8 +156,8 @@ npx tsx examples/skill-commands.ts
 ## 🗂️ Project Structure
 
 ```
-api-contract-validator/
-├── .claude/skills/api-contract-validator/  # Skill prompts (core product)
+openapi-drift-guard/
+├── .claude/skills/openapi-drift-guard/  # Skill prompts (core product)
 │   └── skill.md                            # Commands + execution flow
 ├── src/                                    # TypeScript source
 │   ├── parser/                             # OpenAPI/Swagger parser
@@ -189,7 +189,7 @@ pnpm run docs:dev     # Start docs server
 
 ### vs Schema Validation
 
-| Dimension | Schema Validation | API Contract Validator |
+| Dimension | Schema Validation | OpenAPI Drift Guard |
 |-----------|-------------------|------------------------|
 | Timing | Runtime | Design time |
 | Coverage | Single request | Full API surface |

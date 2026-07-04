@@ -4,14 +4,14 @@
 
 ## 方式 1：Claude Code 插件（推荐）
 
-API Contract Validator 设计为 **Claude Code 插件**，实现无缝集成。
+OpenAPI Drift Guard 设计为 **Claude Code 插件**，实现无缝集成。
 
 ### 方法 A：插件市场
 
 ```bash
 # 在 Claude Code 中运行：
-/plugin marketplace add saqqdy/api-contract-validator
-/plugin install api-contract-validator
+/plugin marketplace add saqqdy/openapi-drift-guard
+/plugin install openapi-drift-guard
 ```
 
 ### 方法 B：本地安装
@@ -21,11 +21,11 @@ API Contract Validator 设计为 **Claude Code 插件**，实现无缝集成。
 cd your-project
 
 # 2. 安装 npm 包
-pnpm add -D api-contract-validator
+pnpm add -D openapi-drift-guard
 
 # 3. 复制技能文件
 mkdir -p .claude/skills
-cp -r node_modules/api-contract-validator/.claude/skills/api-contract-validator .claude/skills/
+cp -r node_modules/openapi-drift-guard/.claude/skills/openapi-drift-guard .claude/skills/
 ```
 
 安装后，可在 Claude Code 中使用 `/validate`、`/drift`、`/contract` 等命令。
@@ -35,7 +35,7 @@ cp -r node_modules/api-contract-validator/.claude/skills/api-contract-validator 
 用于 Node.js/TypeScript 项目编程使用：
 
 ```bash
-pnpm add api-contract-validator
+pnpm add openapi-drift-guard
 ```
 
 ```typescript
@@ -43,7 +43,7 @@ import {
   parseAndNormalizeSpec,
   createAnalyzer,
   detectDrifts,
-} from 'api-contract-validator'
+} from 'openapi-drift-guard'
 
 // 解析规范
 const specEndpoints = parseAndNormalizeSpec('./openapi.yaml')
@@ -62,9 +62,9 @@ const drifts = detectDrifts(specEndpoints, codeEndpoints)
 
 ```bash
 # 在任何项目中
-npx api-contract-validator validate --spec ./openapi.yaml --code ./src
-npx api-contract-validator --version
-npx api-contract-validator --help
+npx openapi-drift-guard validate --spec ./openapi.yaml --code ./src
+npx openapi-drift-guard --version
+npx openapi-drift-guard --help
 ```
 
 ## 方式 4：克隆探索
@@ -72,8 +72,8 @@ npx api-contract-validator --help
 用于开发或探索示例：
 
 ```bash
-git clone https://github.com/saqqdy/api-contract-validator.git
-cd api-contract-validator
+git clone https://github.com/saqqdy/openapi-drift-guard.git
+cd openapi-drift-guard
 pnpm install
 
 # 运行示例
@@ -88,14 +88,14 @@ npx tsx examples/skill-commands.ts
 
 ```bash
 # CLI
-npx api-contract-validator --version
+npx openapi-drift-guard --version
 
 # Node.js
-node -e "console.log(require('api-contract-validator').version)"
+node -e "console.log(require('openapi-drift-guard').version)"
 ```
 
 ## 下一步
 
-- [快速上手](/zh/guide/quick-start) — 查看 API Contract Validator 实际效果
+- [快速上手](/zh/guide/quick-start) — 查看 OpenAPI Drift Guard 实际效果
 - [API 参考](/zh/api/) — 探索完整 API
 - [技能命令](/zh/guide/skill-commands) — 交互式漂移检测命令

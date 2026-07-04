@@ -1,6 +1,6 @@
 ---
-name: api-contract-validator
-description: API Contract Validator — 检测 OpenAPI/Swagger 规范与实现代码之间的 drift，在破坏性变更到达生产环境前发现它们
+name: openapi-drift-guard
+description: OpenAPI Drift Guard — 检测 OpenAPI/Swagger 规范与实现代码之间的 drift，在破坏性变更到达生产环境前发现它们
 version: 0.1.0
 triggers:
   - /validate
@@ -10,14 +10,14 @@ triggers:
   - /api-drift
 ---
 
-# API Contract Validator — 契约 drift 检测
+# OpenAPI Drift Guard — 契约 drift 检测
 
-API Contract Validator 是一个 Claude Code Skill 插件，用于检测 OpenAPI/Swagger 规范与实现代码之间的 drift（偏差），在破坏性变更到达生产环境前发现它们。
+OpenAPI Drift Guard 是一个 Claude Code Skill 插件，用于检测 OpenAPI/Swagger 规范与实现代码之间的 drift（偏差），在破坏性变更到达生产环境前发现它们。
 
 ## Architecture
 
 ```
-.claude/skills/api-contract-validator/  ← Skill 定义（核心产品）
+.claude/skills/openapi-drift-guard/  ← Skill 定义（核心产品）
 src/                                     ← TypeScript 源码（程序化 API）
 internal/                                ← 内部规划文档
 docs/                                    ← VitePress 文档站点
@@ -179,7 +179,7 @@ examples/                                ← 使用示例
 
 ### 程序化 API 示例
 
-如果你想在脚本中使用 API Contract Validator，运行：
+如果你想在脚本中使用 OpenAPI Drift Guard，运行：
 
 ```bash
 # 基础用法
@@ -194,8 +194,8 @@ npx tsx examples/skill-commands.ts
 
 ## 依赖
 
-运行 Skill 需要在项目中安装 `api-contract-validator`：
+运行 Skill 需要在项目中安装 `openapi-drift-guard`：
 
 ```bash
-pnpm add -D api-contract-validator
+pnpm add -D openapi-drift-guard
 ```

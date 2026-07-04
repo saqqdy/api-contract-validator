@@ -1,6 +1,6 @@
 # 版本路线图
 
-API Contract Validator 通过主题版本迭代演进。
+OpenAPI Drift Guard 通过主题版本迭代演进。
 
 ## 当前版本
 
@@ -68,4 +68,4 @@ API Contract Validator 通过主题版本迭代演进。
 
 ## 变更日志
 
-详见 [CHANGELOG.md](https://github.com/saqqdy/api-contract-validator/blob/master/CHANGELOG.md) 发布历史。
+详见 [CHANGELOG.md](https://github.com/saqqdy/openapi-drift-guard/blob/master/CHANGELOG.md) 发布历史。
